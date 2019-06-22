@@ -4,7 +4,7 @@ export class Title extends React.Component {
     render() {
         return (
             <MDBContainer className="pb-5">
-            <h4 className="mt-5 mb-3 titlu">Voyageur</h4>
+            <h4 className="mt-5 mb-3">Voyageur</h4>
             <MDBCarousel
         activeItem={1}
         length={4}
@@ -17,57 +17,44 @@ export class Title extends React.Component {
             <MDBView>
             <img
         className="d-block w-100"
-        src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
-        alt="First slide"
+        src="http://onebigphoto.com/uploads/2013/09/lovely-innsbruck-austria.jpg"
+        alt="first slide"
             />
-            <MDBMask overlay="black-light" />
             </MDBView>
-        <MDBCarouselCaption>
-            <h3 className="h3-responsive">Light mask</h3>
-            <p>First text</p>
-        </MDBCarouselCaption>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="2">
             <MDBView>
                 <img
                     className="d-block w-100"
-                    src="https://mdbootstrap.com/img/Photos/Slides/img%20(99).jpg"
-                    alt="Second slide"
+                    src="http://onebigphoto.com/uploads/2015/03/winter-in-salzburg-austria.jpg"
+                    alt="Wien"
                 />
-                <MDBMask overlay="black-strong" />
             </MDBView>
             <MDBCarouselCaption>
-                <h3 className="h3-responsive">Strong mask</h3>
-                <p>Second text</p>
+                <h3 className="h3-responsive">Salzburg</h3>
             </MDBCarouselCaption>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="3">
             <MDBView>
             <img
         className="d-block w-100"
-        src="https://mdbootstrap.com/img/Photos/Slides/img%20(17).jpg"
+        src="http://onebigphoto.com/uploads/2014/03/amazing-hallstatt-village-austria.jpg"
         alt="Third slide"
             />
             <MDBMask overlay="black-slight" />
             </MDBView>
         <MDBCarouselCaption>
-            <h3 className="h3-responsive">Slight mask</h3>
-            <p>Third text</p>
+            <h3 className="h3-responsive">Hallstatt</h3>
         </MDBCarouselCaption>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="4">
             <MDBView>
                 <img
                     className="d-block w-100"
-                    src="https://mdbootstrap.com/img/Photos/Slides/img%20%28143%29.jpg"
-                    alt="Mattonit's item"
+                    src="http://onebigphoto.com/uploads/2013/01/a-day-outside-tyrol-austria.jpg"
+                    alt="Innsbruck"
                 />
-                <MDBMask overlay="black-light" />
             </MDBView>
-            <MDBCarouselCaption>
-                <h3 className="h3-responsive">Sopot Beach</h3>
-                <p>Taken june 21th by @mattonit</p>
-            </MDBCarouselCaption>
         </MDBCarouselItem>
         </MDBCarouselInner>
     </MDBCarousel>
