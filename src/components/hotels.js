@@ -76,7 +76,7 @@ export class Hotels extends React.Component {
                     <MDBMedia left top href="#">
                             <MDBMedia
                                 object
-                                src="/images/suzane.png"
+                                src="/images/capri.png"
                                 alt="Generic placeholder image"
                             />
                     </MDBMedia>
