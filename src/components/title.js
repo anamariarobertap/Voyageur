@@ -4,7 +4,7 @@ export class Title extends React.Component {
     render() {
         return (
             <MDBContainer className="pb-5">
-            <h4 className="mt-5 mb-3">Voyageur</h4>
+            <h1 className="text-justify font-weight-bold mt-5 mb-3">Voyageur</h1>
             <MDBCarousel
         activeItem={1}
         length={4}

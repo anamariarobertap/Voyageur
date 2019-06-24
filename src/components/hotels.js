@@ -1,8 +1,6 @@
 import React from 'react';
-import {MDBBtn, MDBBtnGroup, MDBCollapse, MDBContainer, MDBMedia, MDBRow} from "mdbreact";
-import AddToHomescreen from "react-add-to-homescreen";
-import ReactDOM from "react-dom";
-import App from "../App";
+import {MDBBtn, MDBCollapse, MDBMedia, MDBRow} from "mdbreact";
+
 
 export class Hotels extends React.Component {
     state = {
