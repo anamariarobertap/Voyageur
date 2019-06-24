@@ -1,5 +1,6 @@
 import React from 'react';
 import {MDBBtn, MDBBtnGroup, MDBContainer, MDBRow} from "mdbreact";
+import AddToHomescreen from "react-add-to-homescreen";
 
 export class Menu extends React.Component {
 
@@ -28,7 +29,14 @@ export class Menu extends React.Component {
                         </MDBRow>
                     </MDBContainer>
                 </MDBContainer>
+                {/*<AddToHomescreen onAddToHomescreenClick={this.handleAddToHomescreenClick} />*/}
             </div>
         );
     }
+    handleAddToHomescreenClick = () => {
+        alert(`
+    1. Open Share menu
+    2. Tap on "Add to Home Screen" button`);
+    };
+
 }
