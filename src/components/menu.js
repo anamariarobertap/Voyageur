@@ -2,7 +2,7 @@ import React from 'react';
 import {MDBBtn, MDBBtnGroup, MDBContainer, MDBRow} from "mdbreact";
 import ReactDOM from "react-dom";
 import {Restaurants} from "./restaurants";
-import {Blog} from "./blog";
+import {Facts} from "./facts";
 import {Pubs} from "./pubs";
 import {Journeys} from "./journeys";
 import {Traditions} from "./traditions";
@@ -18,7 +18,7 @@ export class Menu extends React.Component {
                         <div className="btn-toolbar justify-content-sm-center" role="toolbar" aria-label="Toolbar with button groups">
                             <MDBBtnGroup className="mr-2">
                                 <MDBBtn onClick={this.renderRestaurant} href="#restaurants">Restaurants</MDBBtn>
-                                <MDBBtn onClick={this.renderBlog} href="#blog" >Blog</MDBBtn>
+                                <MDBBtn onClick={this.renderBlog} href="#blog" >Facts</MDBBtn>
                                 <MDBBtn onClick={this.renderPubs} href="#pubs">Pubs</MDBBtn>
                             </MDBBtnGroup>
                         </div>
@@ -45,7 +45,7 @@ export class Menu extends React.Component {
     }
 
     renderBlog() {
-        ReactDOM.render(<Blog />, document.getElementById('content-to-fill'));
+        ReactDOM.render(<Facts />, document.getElementById('content-to-fill'));
     }
 
     renderPubs() {

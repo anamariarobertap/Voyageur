@@ -1,5 +1,5 @@
 import React from 'react';
-import {MDBBtn, MDBCollapse, MDBMedia, MDBRow} from "mdbreact";
+import {MDBBtn, MDBCollapse, MDBMedia} from "mdbreact";
 
 
 export class Hotels extends React.Component {
