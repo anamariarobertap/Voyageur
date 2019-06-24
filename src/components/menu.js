@@ -1,6 +1,14 @@
 import React from 'react';
 import {MDBBtn, MDBBtnGroup, MDBContainer, MDBRow} from "mdbreact";
 import AddToHomescreen from "react-add-to-homescreen";
+import ReactDOM from "react-dom";
+import App from "../App";
+import {Restaurants} from "./restaurants";
+import {Blog} from "./blog";
+import {Pubs} from "./pubs";
+import {Journeys} from "./journeys";
+import {Traditions} from "./traditions";
+import {Hotels} from "./hotels";
 
 export class Menu extends React.Component {
 
@@ -11,9 +19,9 @@ export class Menu extends React.Component {
                     <MDBRow center>
                         <div className="btn-toolbar justify-content-sm-center" role="toolbar" aria-label="Toolbar with button groups">
                             <MDBBtnGroup className="mr-2">
-                                <MDBBtn>Restaurants</MDBBtn>
-                                <MDBBtn>Blog</MDBBtn>
-                                <MDBBtn>Pubs</MDBBtn>
+                                <MDBBtn onClick={this.renderRestaurant} href="#restaurants">Restaurants</MDBBtn>
+                                <MDBBtn onClick={this.renderBlog} href="#blog" >Blog</MDBBtn>
+                                <MDBBtn onClick={this.renderPubs} href="#pubs">Pubs</MDBBtn>
                             </MDBBtnGroup>
                         </div>
                     </MDBRow>
@@ -21,9 +29,9 @@ export class Menu extends React.Component {
                         <MDBRow center>
                             <div className="btn-toolbar justify-content-sm-center" role="toolbar" aria-label="Toolbar with button groups">
                                 <MDBBtnGroup className="mr-2">
-                                    <MDBBtn>Journeys</MDBBtn>
-                                    <MDBBtn>Hotels</MDBBtn>
-                                    <MDBBtn>Trips</MDBBtn>
+                                    <MDBBtn onClick={this.renderJourneys} href="#journeys" >Journeys</MDBBtn>
+                                    <MDBBtn onClick={this.renderHotels} href="#hotels">Hotels</MDBBtn>
+                                    <MDBBtn onClick={this.renderTraditions} href="#trips" >Traditions</MDBBtn>
                                 </MDBBtnGroup>
                             </div>
                         </MDBRow>
@@ -33,10 +41,27 @@ export class Menu extends React.Component {
             </div>
         );
     }
-    handleAddToHomescreenClick = () => {
-        alert(`
-    1. Open Share menu
-    2. Tap on "Add to Home Screen" button`);
-    };
 
+    renderRestaurant() {
+        ReactDOM.render(<Restaurants />, document.getElementById('content-to-fill'));
+    }
+
+    renderBlog() {
+        ReactDOM.render(<Blog />, document.getElementById('content-to-fill'));
+    }
+
+    renderPubs() {
+        ReactDOM.render(<Pubs />, document.getElementById('content-to-fill'));
+    }
+
+    renderHotels() {
+        ReactDOM.render(<Hotels />, document.getElementById('content-to-fill'));
+    }
+
+    renderJourneys() {
+        ReactDOM.render(<Journeys />, document.getElementById('content-to-fill'));
+    }
+    renderTraditions() {
+        ReactDOM.render(<Traditions />, document.getElementById('content-to-fill'));
+    }
 }

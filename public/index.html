@@ -27,7 +27,22 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+
+    </div>
+    <div id="app-main">
+      <div id="restaurants"></div>
+      <div id="blog"></div>
+      <div id="traditions"></div>
+      <div id="journeys"></div>
+      <div id="hotels"></div>
+      <div id="pubs"></div>
+    </div>
+      <div id="content-to-fill">
+
+      </div>
+
+
     <button id="butInstall" aria-label="Install" hidden></button>
     <!--
       This HTML file is a template.
@@ -41,7 +56,7 @@
     -->
   </body>
   <script>
-    // CODELAB: Register service worker.
+    //  Register service worker.
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/service-worker.js')
