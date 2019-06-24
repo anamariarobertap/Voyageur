@@ -25,7 +25,7 @@ export class Restaurants extends React.Component {
     }
     render() {
         return (
-                <div className="container-fluid mt-4">
+                <div className="container-fluid mt-4 flex-column flex-center">
                     <MDBMedia style={{ maxWidth: "800px" }} className="mt-3">
                         <MDBMedia left top href="#">
                             <MDBMedia

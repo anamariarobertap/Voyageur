@@ -6,7 +6,7 @@ export class Facts extends React.Component {
     render() {
         return (
             <MDBContainer>
-                <MDBRow className="justify-content-center">
+                <MDBRow className="justify-content-center flex-column flex-center">
 
                     <MDBListGroup className="my-4 mx-4" style={{ width: "22rem" }}>
                         <MDBListGroupItem>The Austrian flag, one of the oldest in the world, is unique in that, when flown by citizens, it is comprised of three horizontal stripes, alternating red, white, and red. When the flag is flown by the government, in addition to the triband design, it includes an eagle and a coat of arms in the center.</MDBListGroupItem>
